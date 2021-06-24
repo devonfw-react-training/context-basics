@@ -19,10 +19,8 @@ const ModeProvider: FC = ({ children }) => {
 function App() {
   return (
     <ModeProvider>
-      <>
-        <Title />
-        <Button />
-      </>
+      <Title />
+      <Button />
     </ModeProvider>
   );
 }
