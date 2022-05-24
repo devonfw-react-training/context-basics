@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 export const ModeContext = createContext<any>("light");
 
-const ModeProvider: FC = ({ children }) => {
+const ModeProvider: FC<any> = ({ children }) => {
   const [mode, setMode] = useState("light");
   const toggleMode = () => {
     setMode((mode) => (mode === "light" ? "dark" : "light"));
